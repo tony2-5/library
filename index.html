@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Library</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="addBookOverlay">
+            <div id="addBookDiv">
+                <form id="addBookForm">
+                    <div>
+                        <label for="bookTitle">Title</label>
+                        <input type="text" name="bookTitle" id="bookTitle" for="bookTitle" required>
+                    </div>
+                    <div>
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author" for="author" required>
+                    </div>
+                    <div>
+                        <label for="pageNum">Number Of Pages</label>
+                        <input type="number" name="pageNum" id="pageNum" for="pageNum" min="1" max="10000" required>
+                    </div>
+                    <div id="completeCheckbox">
+                        <label for="read">Complete?</label>
+                        <input type="checkbox" name="read" id="read" name="read">
+                    </div>
+                    <div id="bookFormButtons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        <button type="button" id="closeFormButton">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header">
+            <div>
+
+            </div>
+            <div>
+                <h1>Library</h1>
+            </div>
+            <div>
+                <button id="addBookButton">Add Book</button>
+            </div>
+        </div>
+        <div class="books">
+            
+        </div>
+        <div class="footer">
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
