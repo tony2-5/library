@@ -1,47 +1,77 @@
-.html, body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+.html,
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 .addBookOverlay {
-    position: absolute;
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(83, 145, 104, 0.5);
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(83, 145, 104, 0.5);
+  justify-content: center;
+  align-items: center;
 }
-#addBookForm div:nth-of-type(-n+3) {
-    display: flex;
-    flex-direction: column;
+#addBookForm div:nth-of-type(-n + 3) {
+  display: flex;
+  flex-direction: column;
 }
-#addBookForm div:nth-of-type(n+4) {
-    display: flex;
-    flex-direction: row;
+#addBookForm div:nth-of-type(n + 4) {
+  display: flex;
+  flex-direction: row;
 }
 .header {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  background-color: #D5D5D5;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
-.header>div {
-    flex: 1;
-    display: flex;
-    align-self: center;
-    justify-content: center;
+.header > div {
+  flex: 1;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 .books {
-    flex: 7;
-    display: grid;
-    justify-content: center;
-    gap: 2vw;
-    grid-template-columns: repeat(auto-fill, 25vw);
-    grid-auto-rows: 30vh;
-    overflow: scroll;
+  background-color: #FEFBF5;
+  flex: 7;
+  display: grid;
+  justify-content: center;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fill, 20vw);
+  grid-auto-rows: 35vh;
+  overflow: scroll;
+  padding: 10px;
+}
+.books > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+.books > div * {
+  margin: .6vw;
 }
 .footer {
-    flex:1;
+  flex: 1;
+  background-color: #D5D5D5;
+}
+
+/*Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A1C1D9; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #19374C; 
 }
