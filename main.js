@@ -16,7 +16,7 @@ closeFormButton.addEventListener("click", () => {
 });
 function booksFooter() {
   const button = document.createElement("button");
-  button.setAttribute("id", `remove${counter}`);
+    button.setAttribute("id", `remove${counter}`);
   button.appendChild(document.createTextNode("Remove"));
   return button;
 }
